@@ -10,7 +10,7 @@
   display: block;
   text-align: right;
 }
-.header-img {
+.header__img {
   width: 100%;
 }
 .more-inf {
@@ -104,20 +104,20 @@
   justify-content: space-between;
   align-items: center;
 }
-.li-item  {
+.li__item  {
   vertical-align: middle;
 }
 
 .input-checkbox {
   margin: 0 10px;
 }
-.li-label {
+.li__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-.li-input-text {
+.li__input-text {
   width: 226px;
 }
 .remove-img {
@@ -130,21 +130,21 @@
 }
 
 /* Completed */
-.completed-label {
+.completed__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.li-input-text {
+.li__input-text {
   display: none;
 }
 
-.edit-mode-input {
+.edit-mode__input {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode-label {
+.edit__mode-label {
   display: none;
 }

@@ -18,32 +18,53 @@ var completedTasksHolder=document.getElementById("completed-tasks");//completed-
 var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
+    listItem.classList.add('li');
 
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
+    checkBox.classList.add('input');
+    checkBox.classList.add('input-checkbox');
+    checkBox.classList.add('li-item');
     //label
     var label=document.createElement("label");//label
     //input (text)
     var editInput=document.createElement("input");//text
+    editInput.classList.add('input');
+    editInput.classList.add('li-item');
     //button.edit
     var editButton=document.createElement("button");//edit button
+    editButton.classList.add('button');
+    editButton.classList.add('li-item');
 
     //button.delete
     var deleteButton=document.createElement("button");//delete button
+    // deleteButton.classList.add('delete');
+    // deleteButton.classList.add('button');
     var deleteButtonImg=document.createElement("img");//delete button image
+    deleteButtonImg.classList.add('remove-img');
 
     label.innerText=taskString;
     label.className='task';
+    label.classList.add('li-label');
+    label.classList.add('li-item');
 
     //Each elements, needs appending
     checkBox.type="checkbox";
     editInput.type="text";
     editInput.className="task";
+    editInput.classList.add('input');
+    editInput.classList.add('input-text');
+    editInput.classList.add('li-input-text');
+    editInput.classList.add('li-item');
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="edit";
+    editButton.classList.add('button');
+    editButton.classList.add('li-item');
 
     deleteButton.className="delete";
+    deleteButton.classList.add('button');
+    deleteButton.classList.add('li-item');
     deleteButtonImg.src='./remove.svg';
     deleteButton.appendChild(deleteButtonImg);
 
